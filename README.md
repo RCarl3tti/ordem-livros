@@ -1,38 +1,68 @@
-# sv
+# Ordem Livros
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Este é um projeto SvelteKit para gerenciar a ordem de leitura de livros. Ele utiliza TailwindCSS para estilização e várias outras dependências para funcionalidades adicionais.
 
-## Creating a project
+## Tecnologias Utilizadas
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **SvelteKit**: Framework para construção de aplicações web.
+- **TailwindCSS**: Framework de CSS utilitário para estilização.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
+- **Vite**: Ferramenta de build e desenvolvimento rápido.
+- **PostCSS**: Ferramenta para transformar CSS com plugins JavaScript.
+- **Marked**: Biblioteca para analisar e compilar Markdown.
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Estrutura do Projeto
 
-# create a new project in my-app
-npx sv create my-app
-```
+- **/src**: Contém o código-fonte do projeto.
+- **/public**: Arquivos estáticos públicos.
+- **/node_modules**: Dependências do projeto.
+- **/svelte.config.js**: Configurações do SvelteKit.
+- **/tailwind.config.ts**: Configurações do TailwindCSS.
+- **/tsconfig.json**: Configurações do TypeScript.
+- **/vite.config.ts**: Configurações do Vite.
+- **/.npmrc**: Configurações do npm.
+- **/.gitignore**: Arquivos e pastas ignorados pelo Git.
 
-## Developing
+## Instalação
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+1. Clone o repositório:
+    ```sh
+    git clone https://github.com/seu-usuario/ordem-livros.git
+    ```
+2. Navegue até o diretório do projeto:
+    ```sh
+    cd ordem-livros
+    ```
+3. Instale as dependências:
+    ```sh
+    npm install
+    ```
 
-```bash
+## Uso
+
+Para iniciar o servidor de desenvolvimento:
+```sh
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
-
-```bash
+Para construir o projeto para produção:
+```sh
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+Para iniciar o servidor em modo de produção:
+```sh
+npm run preview
+```
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Contribuição
+
+1. Faça um fork do projeto.
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`).
+4. Faça o push para a branch (`git push origin feature/nova-feature`).
+5. Abra um Pull Request.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
